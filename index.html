@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://phase-2.accessflow.online/wp-content/plugins/elementor-pro/assets/css/widget-call-to-action.min.css"
+    />
+  </head>
+  <body>
+    <h1>Keyboard Navigation</h1>
+    <h2>Success Examples</h2>
+    <h3 id="success-rule-1">Button element - Keyboard-navigable</h3>
+<button id="success-1">Button 1</button>
+</br>
+
+<h3 id="success-rule-2">Link with href - Keyboard-navigable</h3>
+<a href="#" id="success-2">Link 1</a>
+</br>
+
+<h3 id="success-rule-3">Div with tabindex - Keyboard-navigable</h3>
+<div tabindex="0" id="success-3">Div Element</div>
+</br>
+
+<h3 id="success-rule-4">Span with tabindex - Keyboard-navigable</h3>
+<span tabindex="0" id="success-4">Span Element</span>
+</br>
+
+<h3 id="success-rule-5">Anchor tag without href but with tabindex</h3>
+<a tabindex="0" id="success-5">Clickable Anchor</a>
+</br>
+
+<h3 id="success-rule-6">Image inside link with href</h3>
+<a href="#" id="success-6"><img height="80px" src="https://pixabay.com/get/g1d35002eddc77ec912438c68d94c3c5e81eea9ebdc08efe519c153ce0321ac859b0f397ffeb96ddc8f333d7d153da709_1280.png" alt="Sample Image" /></a>
+</br>
+<hr>
+<h2>Failure Examples</h2>
+<h3 id="failure-rule-1">Div without tabindex - Not keyboard-navigable</h3>
+<div id="failure-1">Div Element without tabindex</div>
+</br>
+
+<h3 id="failure-rule-2">Span without tabindex - Not keyboard-navigable</h3>
+<span id="failure-2">Span Element without tabindex</span>
+</br>
+
+<h3 id="failure-rule-3">Anchor tag without href or tabindex</h3>
+<a id="failure-3">Non-clickable Anchor</a>
+</br>
+
+<h3 id="failure-rule-4">Button element inside a non-focusable div</h3>
+<div id="failure-4">
+    <button>Button inside Div</button>
+</div>
+</br>
+
+<h3 id="failure-rule-5">Image inside anchor tag without href</h3>
+<a id="failure-5"><img height="80px" src="https://pixabay.com/get/ge39cf152dd520d0797750b8e7bb589bc74a10696eb92811c713184a443795cf96238686b48a78a5ea4bdb5a11f323d1a_1280.png" alt="Image without href anchor" /></a>
+</br>
+
+<h3 id="failure-rule-6">I tag used as button without tabindex</h3>
+<i id="failure-6" class="icon-button">Icon Button</i>
+</br>
+    <hr />
+    <h2>Sentry /pricing/?referrer=trust input</h2>
+    <fieldset
+      role="radiogroup"
+      aria-labelledby="paid-plan-tier-legend"
+      class="css-134ro3d e19fczpc1"
+    >
+      <legend id="paid-plan-tier-legend" class="css-ycoj4p e19fczpc0">
+        Paid Plan Tier
+      </legend>
+      <label id="team" class="radio-input"
+        ><input
+          type="radio"
+          name="paid-plan-tier"
+          aria-labelledby="team"
+          tabindex="0"
+          class="css-qzhs26 e19fczpc2"
+          checked=""
+          value="0"
+        /><span>team</span></label
+      ><label id="business" class="radio-input"
+        ><input
+          type="radio"
+          name="paid-plan-tier"
+          aria-labelledby="business"
+          tabindex="0"
+          class="css-qzhs26 e19fczpc2"
+          value="1"
+        /><span>business</span></label
+      >
+    </fieldset>
+    <hr />
+
+    <h2>phase-2 Elementor Widget with tabindex="0"</h2>
+    <div
+      class="elementor-element elementor-element-4e7846b elementor-cta--skin-cover elementor-cta--valign-top elementor-animated-content elementor-bg-transform elementor-bg-transform-zoom-in elementor-widget elementor-widget-call-to-action"
+      data-id="4e7846b"
+      data-element_type="widget"
+      data-widget_type="call-to-action.default"
+    >
+      <div class="elementor-widget-container">
+        <link
+          rel="stylesheet"
+          href="/wp-content/plugins/elementor-pro/assets/css/widget-call-to-action.min.css"
+        />
+        <div class="elementor-cta" tabindex="0">
+          <div class="elementor-cta__bg-wrapper" tabindex="0">
+            <div
+              class="elementor-cta__bg elementor-bg"
+              style="
+                background-image: url(https://phase-2.accessflow.online/wp-content/uploads/2023/05/sidebar_bg.jpeg);
+              "
+              role="img"
+              aria-label="sidebar_bg"
+            ></div>
+            <div class="elementor-cta__bg-overlay"></div>
+          </div>
+          <div class="elementor-cta__content" tabindex="0">
+            <h2
+              class="elementor-cta__title elementor-cta__content-item elementor-content-item elementor-animated-item--grow"
+            >
+              HUAWEI <br /><span style="font-weight: 300">Matepad</span>
+            </h2>
+            <div
+              class="elementor-cta__description elementor-cta__content-item elementor-content-item elementor-animated-item--grow"
+            >
+              Unleash the Power of Exploration.
+            </div>
+
+            <div
+              class="elementor-cta__button-wrapper elementor-cta__content-item elementor-content-item elementor-animated-item--grow"
+            >
+              <a
+                class="elementor-cta__button elementor-button elementor-size-xs"
+                role="presentation"
+              >
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
