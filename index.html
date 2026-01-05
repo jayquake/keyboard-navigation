@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	  <meta
+	 <meta
   http-equiv="Content-Security-Policy"
-  content="default-src 'self';
-           connect-src 'self' https://ar-fixes--acsb-system--test.acsb-test.com;">
+  content="
+    default-src 'self';
+    connect-src 'self' https://ar-fixes--acsb-system--test.acsb-test.com;
+    script-src 'self' https://ar-fixes--accesswidget--test.acsb-test.com;
+    style-src 'self' 'unsafe-inline' https://phase-2.accessflow.online;
+    img-src 'self' data: https:;">
     <title>HTML + CSS</title>
     <link rel="stylesheet" href="styles.css" />
     <link
@@ -264,15 +268,7 @@
   
 		  </div>
 
-	  <script>
-(function () {
-	const s = document.createElement('script');
-	const h = document.querySelector('head') || document.body;
-	s.src = 'https://ar-fixes--accesswidget--test.acsb-test.com/app-flow.js';
-	s.async = true;
-	h.appendChild(s);
-}());
-</script>
+<script src="./loader.js" defer></script>
 	  
   </body>
 </html>
